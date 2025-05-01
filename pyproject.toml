@@ -1,0 +1,22 @@
+[project]
+name = "boopai-mcp"
+version = "0.1.3"
+description = "A MCP server for boopai"
+readme = "README.md"
+authors = [{ name = "boopai", email = "boopai@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.11.18",
+    "mcp>=1.6.0",
+    "python-dotenv>=1.1.0",
+    "solana==0.34.0",
+    "solders==0.21.0",
+    "base58>=2.1.0",
+]
+
+[project.scripts]
+boopai-mcp = "boopai_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
